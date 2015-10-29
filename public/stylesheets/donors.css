@@ -1,0 +1,90 @@
+/*- Table of content
+- Donors Section
+- Media Queries*/
+
+
+/*----DONOR SECTION----*/
+section.donors::before,
+section.donors::after{
+  content: "";
+  display: table;
+}
+section.donors::after{
+  clear: both;
+}
+.donors{
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 10px 20px;
+  background-color: #fff;
+}
+.donorAmount{
+  width: 90%;
+  margin: 0px auto 10px;
+}
+.amount{
+  width: 90%;
+  margin: 0px auto;
+  padding-right: 10px;
+  border-bottom: solid 1px #808080;
+}
+.amount h2{
+  width: 165px;
+  margin: 0px 0px 10px 10px;
+  font-size: 32px;
+}
+.donorlist-ctn::before,
+.donorlist-ctn::after{
+  content: "";
+  display: table;
+}
+.donorlist-ctn::after{
+  clear: both;
+}
+.donorlist-ctn{
+  clear: both;
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.donorlist{
+  float: left;
+  width: 32%;
+  min-width: 267px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+.donorlist ul{
+  list-style: none;
+}
+.donorlist ul li{
+  padding: 0px 0px 5px;
+}
+
+@media only screen and (max-width: 1010px){
+  .donorlist{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .scrollBox{
+    font-size: 14px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow: scroll;
+    border-left: solid 1px #808080;
+    border-right: solid 1px #808080;
+    border-bottom: solid 1px #808080;
+    box-shadow: inset 0px 6px 7px -5px #808080;
+    -webkit-box-shadow: inset 0px 6px 7px -5px #808080;
+    -moz-box-shadow: inset 0px 6px 7px -5px #808080;
+    -o-box-shadow: inset 0px 6px 7px -5px #808080;
+    -ms-box-shadow: inset 0px 6px 7px -5px #808080;
+  }
+  .donorlist{
+    min-width: 230px;
+  }
+}

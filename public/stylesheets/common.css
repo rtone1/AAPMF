@@ -1,0 +1,475 @@
+/* Table of content
+- Normalize Document
+- Repeated Styles and Fonts
+- Header and Navigation
+- Call to Action Button
+- Page Footer and Sub-Footer
+- Media Queries
+- Animations
+*/
+
+/*NORMALIZE SECTION*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a img{
+  border: none;
+  outline: none;
+}
+header,
+.ctn-page{
+  position: relative;
+}
+header,
+nav,
+article,
+footer,
+address,
+section {
+  display: block;
+}
+b,
+strong{
+  font-weight: bold;
+}
+@font-face {
+  font-family: OpenSansCond;
+  src: url('../../public/fonts/OPENSANSCOND.TTF');
+  src: url('../../public/fonts/OpenSans-CondLight.TTF?#iefix') format('truetype');
+}
+
+/*----REPEATED STYLES AND FONTS----*/
+body{
+  font-family: 'Arial', sans-serif;
+}
+footer h2,
+.mainqoute,
+.ctn-headlines h1,
+.ctn-headlines h2,
+.Init em{
+  font-family: OpenSansCond, 'Open Sans Condensed', sans-serif;
+}
+header,
+.landing-SC,
+.ctn-headlines,
+footer,
+.sub-footer{
+  width: 100%;
+}
+header,
+.sub-footer{
+  background-color: #006FA0;
+  color: #fff;
+}
+h1,h2,h3,h4,em{
+  color: #006FA0;
+  font-weight: bold;
+}
+
+/*-------HEADER AND NAVIGATION SECTION-----*/
+    header{
+      padding: 5px 10px;
+    }
+    .aapmLogo{
+      position: relative;
+      left: 10px;
+      width: 10%;
+      min-width: 110px;
+      max-width: 150px;
+      height: auto;
+    }
+    nav{
+      position: absolute;
+      top: 30%;
+      right: 10px;
+    }
+    header li{
+      display: inline-block;
+      vertical-align: top;
+    }
+    nav a{
+      display: block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: solid 1px #006FA0;
+    }
+    nav a.callAct{
+      background-color: #AB1F66;
+      border: solid 1px #C5B0B0;
+    }
+    nav a.callAct:hover{
+      border: solid 1px #fff;
+      background-color: #006FA0;
+      transition: .2s;
+    }
+    .nav-link:hover{
+      border: solid 1px #fff;
+      transition: .2s;
+    }
+    .hamIcon{
+      display: none;
+    }
+    .activeLink{
+      color: #fff;
+      border-bottom: solid 1px #fff;
+    }
+    nav a.callAct:active{
+      color: #AB1F66;
+      background-color: #fff;
+      border: solid 1px #fff;
+    }
+    .callActive{
+      color: #AB1F66;
+      background-color: #fff;
+      border: solid 1px #fff;
+    }
+/*-----CALL TO ACTION BUTTON------*/
+.buttonDonate{
+  display: block;
+  width: 280px;
+  margin: 55px auto;
+  padding: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #AB1F66;
+  border: solid 3px #AB1F66;
+  color: #fff;
+}
+.buttonDonate:hover{
+  background-color: inherit;
+  border: solid 3px #AB1F66;
+  color: #AB1F66;
+  transition: .2s;
+}
+.shadow{
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .5);
+  -o-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .5);
+  -ms-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, .5);
+}
+
+/*----FOOTER AND SUBFOOTER----*/
+      footer::before,
+      footer::after,
+      .sub-footer::before,
+      .sub-footer::after{
+        content: "";
+        display: table;
+      }
+      footer::after,
+      .sub-footer::after{
+        clear: both;
+      }
+      footer{
+        background-color: #F1F1F2;
+        padding: 60px 10px;
+        clear: both;
+        overflow: hidden;
+      }
+      .att-text{
+        float: left;
+        width: 50%;
+        margin-left: 5%;
+      }
+      .att-text h2{
+        font-size: 52px;
+      }
+      .att-text p{
+        font-size: 28px;
+      }
+      .btt-ct{
+        float: right;
+        width: 280px;
+        margin: 0px 10% 0px 0px;
+        text-align: center;
+      }
+      .btt-ct .buttonDonate{
+        margin: 15px auto;
+      }
+      .btt-ct .sp-statement{
+        width: 100%;
+      }
+  .sub-footer{
+    padding: 20px 10px;
+    clear: both;
+    overflow: hidden;
+  }
+  .loc-info{
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .ctn-sublist{
+    float: right;
+  }
+  .subFT-links{
+    margin: 0px 20px;
+    line-height: 55px;
+  }
+  .subFT-links li{
+    display: inline;
+  }
+  .subFT-links li~li{
+    margin-left: 10px;
+  }
+  .subFT-links a{
+    padding: 10px 40px;
+    font-size: 22px;
+    border: solid 2px #fff;
+  }
+  .subFT-links a:hover{
+    background-color: white;
+    color: #006FA0;
+    transition: .2s;
+  }
+
+/*MEDIA QUERIES FOR RESPONSIVENESS COMMON ELEMENTS*/
+@media only screen and (min-width: 2500px) {
+  body{
+    width: 2500px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 3px 0px #777575;
+    -webkit-box-shadow: 0px 0px 3px 0px #777575;
+    -moz-box-shadow: 0px 0px 3px 0px #777575;
+    -o-box-shadow: 0px 0px 3px 0px #777575;
+    -ms-box-shadow: 0px 0px 3px 0px #777575;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .loc-info{
+    font-size: 16px;
+  }
+  .subFT-links a{
+    font-size: 16px;
+  }
+  .att-text h2{
+    line-height: 54px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .hamIcon{
+    position: relative;
+    display: inline-block;
+    float: right;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #fff;
+  }
+  .hamIcon>.menuText{
+    margin-bottom: 2px;
+  }
+  .line1,
+  .line2,
+  .line3{
+    width: 50px;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  nav{
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #F1F1F2;
+  }
+  nav .nav-list{
+    margin: 0px;
+    padding: 0px;
+  }
+  nav li{
+    display: block;
+  }
+  nav a{
+    color: #000;
+    font-size: 22px;
+    line-height: 40px;
+    border: none;
+    background-color: #F1F1F2;
+    border-bottom: solid 1px #D3D3D3;
+  }
+  nav a.callAct{
+    font-size: 22px;
+    color: #fff;
+  }
+  nav a.callAct:hover{
+    background-color: #AB4B7C;
+  }
+  .nav-link:hover{
+    background-color: #DEDEDE;
+  }
+  .nav-link:active{
+    background-color: #fff;
+    border: solid 1px #fff;
+    color: #006FA0;
+  }
+  .activeLink{
+    background-color: #fff;
+    border: solid 1px #fff;
+    color: #006FA0;
+  }
+  .btt-Donate{
+    width: 240px;
+    margin: 15px auto;
+    font-size: 38px;
+  }
+  .att-text{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btt-ct::before,
+  .btt-ct::before{
+    content: "";
+    display: table;
+  }
+  .btt-ct::after{
+    clear: both;
+  }
+  .btt-ct{
+    clear: both;
+    float: none;
+    margin: 0px auto;
+  }
+  .ctn-sublist{
+    width: 100%;
+    text-align: center;
+  }
+  .loc-info{
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .subFT-links a{
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .btt-ct .buttonDonate{
+    width: 240px;
+    margin: 0px auto 10px ;
+    padding: 15px;
+    font-size: 38px;
+  }
+  .btt-Donate{
+    width: 190px;
+    padding: 10px;
+    font-size: 28px;
+  }
+  .loc-info{
+    font-size: 16px;
+  }
+  .subFT-links li a{
+    font-size: 12px;
+    padding: 10px 35px;
+  }
+  .subFT-links{
+    margin: 0px 10px;
+    line-height: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 455px) {
+  .att-text h2{
+    font-size: 44px;
+  }
+  footer .att-text p{
+    font-size: 18px;
+  }
+  .btt-ct i{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 355px) {
+  .buttonDonate {
+    margin: 10px auto;
+  }
+  .subFT-links li a{
+    padding: 10px 25px;
+  }
+}
+
+
+/*----ANIMATION CLASSES----*/
+.top{
+  animation: topRotate .6s forwards;
+  -webkit-animation-name: topRotate;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: topRotate .6s forwards;
+  -ms-animation: topRotate .6s forwards;
+  -o-animation: topRotate .6s forwards;
+}
+.middle{
+  animation: fadeOut .2s forwards;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animtion: fadeOut .2s forwards;
+  -ms-animtion: fadeOut .2s forwards;
+  -o-animtion: fadeOut .2s forwards;
+
+}
+.bottom{
+  animation: bottomRotate .6s forwards;
+  -webkit-animation-name: bottomRotate;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: bottomRotate .6s forwards;
+  -ms-animation: bottomRotate .6s forwards;
+  -o-animation: bottomRotate .6s forwards;
+}
+.backMT{
+  animation: menuTopStart .6s forwards;
+  -webkit-animation-name: menuTopStart;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: menuTopStart .6s forwards;
+  -ms-animation: menuTopStart .6s forwards;
+  -o-animation: menuTopStart .6s forwards;
+
+}
+.backM{
+  animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
+  -moz-animation: fadeIn 1s forwards;
+  -ms-animation: fadeIn 1s forwards;
+  -o-animation: fadeIn 1s forwards;
+}
+.backMB{
+  animation: menuBottomStart .6s forwards;
+  -webkit-animation-name: menuBottomStart;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: menuBottomStart .6s forwards;
+  -ms-animation: menuBottomStart .6s forwards;
+  -o-animation: menuBottomStart .6s forwards;
+}

@@ -1,0 +1,65 @@
+/*- Table of content
+- Leadership Image Section
+- Media Queries*/
+
+.sc-leadershipImg{
+  width: 100%;
+  padding: 40px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+figure{
+  width: 15%;
+  min-width: 220px;
+  max-width: 350px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+figure:nth-child(2),
+figure:nth-child(3){
+  margin-left: 5%;
+}
+figure img{
+  width: 100%;
+}
+figure figcaption{
+  font-size: 14px;
+  padding: 10px 0px;
+}
+figure h4{
+  font-size: 16px;
+  padding: 10px 0px 0px;
+}
+.ld-directors{
+  margin: 20px 0px;
+  font-size: 22px;
+}
+
+
+/*MEDIA QUERIES FOR RESPONSIVENESS LEADERSHIP PAGE*/
+@media only screen and (min-width: 1500px) {
+  figure{
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  figure:nth-child(2),
+  figure:nth-child(3){
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  figure:nth-child(3){
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 500px){
+  figure:nth-child(2){
+    margin-left: 0px;
+  }
+  .sc-leadershipImg{
+    padding: 40px 30px;
+  }
+}

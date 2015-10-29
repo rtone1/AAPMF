@@ -1,0 +1,285 @@
+/*MAIN LANDING SECTION AND IMAGE*/
+  .landing-SC{
+    background: url('../../public/images/backPain.jpg') #e3edf4 no-repeat;
+    background-size: cover;
+    padding: 10px 10px;
+  }
+ .headline{
+   width: 100%;
+   text-align: center;
+  }
+  .headline>h1{
+    margin-top: 10px;
+    font-size: 46px;
+  }
+  .mainqoute{
+    width: 75%;
+    margin: 35px auto;
+    font-size: 62px;
+    line-height: 70px;
+  }
+  .cite{
+    width: 200px;
+    margin: 35px auto;
+  }
+
+/*ARROW ACTION TO SCROLL*/
+.arrow{
+  background-color: #fff;
+}
+.arrow>div{
+  width: 0px;
+  height: 0px;
+  margin: 0px auto;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 60px solid #e3edf4;
+}
+
+/*IMPACT STATEMENTS SECTION*/
+    .ctn-headlines{
+      padding: 30px 10px;
+      overflow: hidden;
+      text-align: center;
+      background-color: #fff;
+    }
+    .SC-statements{
+      position: relative;
+      left: 6.5%;
+    }
+    .ctn-headlines h1,h2{
+      font-size: 60px;
+      font-weight: bolder;
+    }
+    .ctn-headlines>h1{
+      margin-bottom: 30px;
+    }
+    .imp-article{
+      float: left;
+      width: 46%;
+      min-width: 300px;
+      margin-bottom: 25px;
+      padding: 10px;
+      text-align: left;
+    }
+    .thumbnails{
+      float: left;
+      width: 25%;
+      min-width: 100px;
+      max-width: 250px;
+    }
+    .article-ct{
+      width: 62%;
+      margin-left: 30%;
+    }
+    .article-text{
+      height: 200px;
+      overflow: hidden;
+    }
+    .article-text h2{
+      margin: 0px 0px 10px 0px;
+      line-height: 48px;
+      font-size: 48px;
+    }
+    .article-text p{
+      font-size: 20px;
+    }
+    .getMore{
+      display: block;
+      margin: 10px 0px;
+      font-size: 20px;
+      color: #AB1F66;
+    }
+
+/*MEDIA QUERIES FOR RESPONSIVENESS LANDING PAGE*/
+@media only screen and (min-width: 2000px) {
+  .landing-SC{
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .headline>h1{
+    font-size: 54px;
+    margin-top: 10px;
+  }
+  .mainqoute{
+    line-height: 90px;
+    width: 75%;
+    margin: 35px auto;
+    font-size: 82px;
+    transition: .2s;
+  }
+  .arrow>div{
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 70px solid #e3edf4;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .headline>h1{
+    font-size: 40px;
+  }
+  .mainqoute{
+    line-height: 48px;
+    width: 75%;
+    margin: 30px auto;
+    font-size: 46px;
+    transition: .2s;
+  }
+  .cite{
+    margin: 16px auto 15px;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .headline>h1{
+    font-size: 30px;
+    margin: 8px 0px -8px;
+  }
+  .mainqoute{
+    width: 85%;
+    margin: 16px auto;
+    font-size: 36px;
+  }
+  .cite{
+    margin: 16px auto 12px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .SC-statements{
+    left: 0%;
+  }
+  .imp-article{
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 25px;
+  }
+  .article-ct{
+    margin-left: 32%;
+    width: 65%;
+  }
+  .article-text{
+    height: auto;
+    overflow: none;
+  }
+  .arrow>div{
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 50px solid #e3edf4;
+  }
+}
+
+
+@media only screen and (max-width: 750px){
+  .headline>h1{
+    margin: 8px;
+  }
+  .mainqoute{
+    width: 90%;
+  }
+  .cite{
+    margin: 16px auto 15px;
+  }
+  .ct-statements{
+    margin-left: 7%;
+  }
+  .imp-article{
+    padding: 0px;
+  }
+  .arrow>div{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mainqoute{
+    width: 90%;
+    line-height: 36px;
+    font-size: 32px;
+  }
+  .cite{
+    margin: 25px auto 15px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .mainqoute{
+    width: 90%;
+    line-height: 32px;
+    font-size: 28px;
+  }
+  .cite{
+    margin: 25px auto 15px;
+  }
+  .impactHealine-SC img{
+    max-width: 120px;
+  }
+  .thumbnails{
+    margin-top: 5px;
+  }
+  .ctn-headlines h1{
+    font-size: 36px;
+  }
+  .article-text h2{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .article-text p,
+  .getMore{
+    font-size: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 455px) {
+  .headline>h1{
+    font-size: 26px;
+  }
+  .mainqoute{
+    font-size: 24px;
+  }
+  .cite{
+    margin: 25px auto 15px;
+  }
+  .article-ct {
+    width: 70%;
+  }
+  .ct-statements{
+    margin-left: 0%;
+  }
+  .impactHealine-SC h1, h2 {
+    font-size: 32px;
+  }
+  .article-text>p,
+  .getMore{
+    font-size: 14px;
+  }
+  .att-text h2{
+    font-size: 44px;
+  }
+  .att-text p{
+    font-size: 24px;
+  }
+}
+
+
+@media only screen and (max-width: 355px) {
+  .mainqoute{
+    width: 100%;
+  }
+  .cite {
+    margin: 16px auto 15px;
+  }
+  .article-ct {
+    width: 60%;
+    margin-left: 37%;
+  }
+}
